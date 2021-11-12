@@ -29,7 +29,7 @@ $urna-height: 40rem;
     text-decoration: none;
     outline: none;
     text-transform: capitalize;
-    transition: all .4s linear .2s;
+    transition: all .4s linear;
 }
 
 html {
@@ -95,6 +95,11 @@ html {
             text-align: center;
             font-size: 2.5rem;
             font-weight: bold;
+        }
+
+        .keyboard--numbers_btn:hover {
+            background-color: $keyboard-btn-white-cor;
+            color: $keyboard-btn-numbers-cor;
         }
     }
 
