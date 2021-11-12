@@ -1,0 +1,133 @@
+// VARIÁVEIS
+
+$urna-cor: #dbd5c9;
+$display-cor: linear-gradient(to right, #e7e7e7, #d3d3d3 51%, #c2c2c2 100%);
+$keyboard-cor: #403a3a;
+$keyboard-btn-numbers-cor: #000;
+$keyboard-btn-number-border-cor: #555;
+$keyboard-btn-white-cor: #fff;
+$keyboard-btn-reset-cor: #fa7510;
+$keyboard-btn-confirm-cor: #48c079;
+$urna-height: 40rem;
+
+// MIXIN
+
+@mixin flex($direction: row, $wrap: nowrap, $just: center, $align: center) {
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $just;
+    align-items: $align;
+}
+
+// RESET
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .4s linear .2s;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+// ESTILIZAÇÃO
+
+// URNA BACKGROUND
+
+.container {
+    width: 50%;
+    margin: 2rem auto;
+    background-color: $urna-cor;
+    @include flex($direction: row, $wrap: nowrap, $just: space-between, $align: center);
+}
+
+// AREA TELA
+
+.display {
+    margin: 3rem 1rem 3rem 3rem;
+    padding: 2rem;
+    flex: 65%;
+    background: $display-cor;
+    min-height: $urna-height;
+    font-size: 1.6rem;
+
+    .display--main {
+        @include flex($direction: row, $wrap: nowrap, $just: flex-start, $align: flex-start);
+
+        .display--main_left {
+            flex: 75%;
+        }
+
+        .display--right {
+            flex: 25%;
+        }
+    }
+}
+
+// AREA TECLADO
+
+.keyboard {
+    margin: 3rem 3rem 3rem 1rem;
+    padding: 1rem;
+    flex: 35%;
+    background-color: $keyboard-cor;
+    min-height: $urna-height;
+    font-size: 1.6rem;
+    @include flex($direction: column, $wrap: nowrap, $just: space-between, $align: center);
+
+    .keyboard--numbers {
+        @include flex($direction: row, $wrap: wrap, $just: space-evenly, $align: center);
+        cursor: pointer;
+
+        .keyboard--numbers_btn {
+            width: 30%;
+            padding: 1.5rem;
+            margin: .2rem;
+            background-color: $keyboard-btn-numbers-cor;
+            color: $keyboard-btn-white-cor;
+            border: inset .3rem $keyboard-btn-number-border-cor;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+    }
+
+    .keyboard--actions {
+        @include flex($direction: row, $wrap: wrap, $just: space-between, $align: flex-end);
+        cursor: pointer;
+
+        .actions {
+            padding: 1.5rem;
+            margin: .2rem;
+            color: $keyboard-btn-numbers-cor;
+            border: inset .3rem $keyboard-btn-number-border-cor;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            @include flex($direction: row, $wrap: nowrap, $just: center, $align: center);
+        }
+
+        .keyboard--actions_white-vote {
+            width: 29%;
+            background-color: $keyboard-btn-white-cor;
+        }
+
+        .keyboard--actions_reset {
+            width: 29%;
+            background-color: $keyboard-btn-reset-cor;
+        }
+
+        .keyboard--actions_confirm {
+            width: 35%;
+            height: 6rem;
+            background-color: $keyboard-btn-confirm-cor;
+        }
+    }
+}
+

@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  text-transform: capitalize;
+  -webkit-transition: all .4s linear .2s;
+  transition: all .4s linear .2s;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 50%;
+  margin: 2rem auto;
+  background-color: #dbd5c9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display {
+  margin: 3rem 1rem 3rem 3rem;
+  padding: 2rem;
+  -webkit-box-flex: 65%;
+      -ms-flex: 65%;
+          flex: 65%;
+  background: -webkit-gradient(linear, left top, right top, from(#e7e7e7), color-stop(51%, #d3d3d3), to(#c2c2c2));
+  background: linear-gradient(to right, #e7e7e7, #d3d3d3 51%, #c2c2c2 100%);
+  min-height: 40rem;
+  font-size: 1.6rem;
+}
+
+.display .display--main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.display .display--main .display--main_left {
+  -webkit-box-flex: 75%;
+      -ms-flex: 75%;
+          flex: 75%;
+}
+
+.display .display--main .display--right {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+}
+
+.keyboard {
+  margin: 3rem 3rem 3rem 1rem;
+  padding: 1rem;
+  -webkit-box-flex: 35%;
+      -ms-flex: 35%;
+          flex: 35%;
+  background-color: #403a3a;
+  min-height: 40rem;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.keyboard .keyboard--numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.keyboard .keyboard--numbers .keyboard--numbers_btn {
+  width: 30%;
+  padding: 1.5rem;
+  margin: .2rem;
+  background-color: #000;
+  color: #fff;
+  border: inset 0.3rem #555;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.keyboard .keyboard--actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer;
+}
+
+.keyboard .keyboard--actions .actions {
+  padding: 1.5rem;
+  margin: .2rem;
+  color: #000;
+  border: inset 0.3rem #555;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.keyboard .keyboard--actions .keyboard--actions_white-vote {
+  width: 29%;
+  background-color: #fff;
+}
+
+.keyboard .keyboard--actions .keyboard--actions_reset {
+  width: 29%;
+  background-color: #fa7510;
+}
+
+.keyboard .keyboard--actions .keyboard--actions_confirm {
+  width: 35%;
+  height: 6rem;
+  background-color: #48c079;
+}
+/*# sourceMappingURL=style.css.map */
