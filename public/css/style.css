@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -32,6 +34,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .display {
@@ -44,6 +47,7 @@ html {
   background: linear-gradient(to right, #e7e7e7, #d3d3d3 51%, #c2c2c2 100%);
   min-height: 40rem;
   font-size: 1.6rem;
+  border: .6rem solid #000;
 }
 
 .display .display--main {
@@ -63,15 +67,118 @@ html {
 }
 
 .display .display--main .display--main_left {
-  -webkit-box-flex: 75%;
-      -ms-flex: 75%;
-          flex: 75%;
+  -webkit-box-flex: 90%;
+      -ms-flex: 90%;
+          flex: 90%;
 }
 
-.display .display--main .display--right {
+.display .display--main .display--main_left h1 {
+  font-size: 2rem;
+}
+
+.display .display--main .display--main_left h2 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.display .display--main .display--main_left .vote-numbers {
+  margin-top: 3rem;
+  width: 50%;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display .display--main .display--main_left .vote-numbers .vote-numbers--spaces {
+  width: 4rem;
+  height: 7rem;
+  background-color: #fff;
+  border: .2rem solid #000;
+  margin: 0 .1rem;
+  text-align: center;
+  line-height: 7rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.display .display--main .display--main_left h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.display .display--main .display--main_left h3 span {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.display .display--main .display--main_right {
   -webkit-box-flex: 25%;
       -ms-flex: 25%;
           flex: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display .display--main .display--main_right .img1 {
+  width: 100%;
+  text-align: center;
+  border: solid 1px #000;
+}
+
+.display .display--main .display--main_right .img1 img {
+  width: 100%;
+}
+
+.display .display--main .display--main_right .img1 p {
+  background-color: #fff;
+}
+
+.display .display--main .display--main_right .img2 {
+  margin-top: .5rem;
+  width: 80%;
+  text-align: center;
+  border: solid 1px #000;
+}
+
+.display .display--main .display--main_right .img2 img {
+  width: 100%;
+}
+
+.display .display--main .display--main_right .img2 p {
+  background-color: #fff;
+}
+
+.display .display--footer {
+  margin-top: .5rem;
+  border-top: .1rem solid #000;
+  text-transform: uppercase;
+}
+
+.display .display--footer span {
+  font-weight: bold;
 }
 
 .keyboard {
@@ -186,5 +293,13 @@ html {
   width: 35%;
   height: 6rem;
   background-color: #48c079;
+}
+
+.bazil-flag {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,7 @@
+// IMPORTAÇÃO DE FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 // VARIÁVEIS
 
 $urna-cor: #dbd5c9;
@@ -34,6 +38,7 @@ $urna-height: 40rem;
 
 html {
     font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
 }
 
 // ESTILIZAÇÃO
@@ -45,6 +50,7 @@ html {
     margin: 2rem auto;
     background-color: $urna-cor;
     @include flex($direction: row, $wrap: nowrap, $just: space-between, $align: center);
+    position: relative;
 }
 
 // AREA TELA
@@ -56,16 +62,100 @@ html {
     background: $display-cor;
     min-height: $urna-height;
     font-size: 1.6rem;
+    border: .6rem solid #000;
 
     .display--main {
         @include flex($direction: row, $wrap: nowrap, $just: flex-start, $align: flex-start);
 
         .display--main_left {
-            flex: 75%;
+            flex: 90%;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                margin-top: 2rem;
+                font-size: 1.8rem;
+                text-align: center;
+            }
+
+            .vote-numbers {
+                margin-top: 3rem;
+                width: 50%;
+                height: 10rem;
+                @include flex($direction: row, $wrap: nowrap, $just:flex-start, $align: center);
+
+                .vote-numbers--spaces {
+                    width: 4rem;
+                    height: 7rem;
+                    background-color: #fff;
+                    border: .2rem solid #000;
+                    margin: 0 .1rem;
+                    text-align: center;
+                    line-height: 7rem;
+                    font-size: 4rem;
+                    font-weight: bold;
+                }
+            }
+
+            h3 {
+                font-size: 2rem;
+                font-weight: normal;
+
+                span {
+                    font-size: 2.2rem;
+                    font-weight: bold;
+                }
+            }
+
         }
 
-        .display--right {
+        .display--main_right {
             flex: 25%;
+            @include flex($direction: column, $wrap: nowrap, $just: center, $align: center);
+
+            .img1 {
+                width: 100%;
+                text-align: center;
+                border: solid 1px #000;
+
+                img {
+                    width: 100%;
+                }
+
+                p {
+
+                    background-color: #fff;
+                }
+            }
+
+            .img2 {
+                margin-top: .5rem;
+                width: 80%;
+                text-align: center;
+                border: solid 1px #000;
+
+                img {
+                    width: 100%;
+                }
+
+                p {
+                    
+                    background-color: #fff;
+                }
+            }
+        }
+
+    }
+
+    .display--footer {
+        margin-top: .5rem;
+        border-top: .1rem solid #000;
+        text-transform: uppercase;
+
+        span {
+            font-weight: bold;
         }
     }
 }
@@ -134,5 +224,15 @@ html {
             background-color: $keyboard-btn-confirm-cor;
         }
     }
+}
+
+// ÁREA BANDEIRA DO BRAZIL
+
+.bazil-flag {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
 }
 
