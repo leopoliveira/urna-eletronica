@@ -17,6 +17,24 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+@-webkit-keyframes msgs {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #505050;
+  }
+}
+
+@keyframes msgs {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #505050;
+  }
+}
+
 .container {
   width: 50%;
   margin: 2rem auto;
@@ -48,6 +66,31 @@ html {
   height: 50rem;
   font-size: 1.6rem;
   border: .6rem solid #000;
+  position: relative;
+}
+
+.display .msg {
+  width: 100%;
+  height: 100%;
+  font-size: 12rem;
+  text-align: center;
+  text-shadow: .3rem .3rem #000;
+  -webkit-animation: 2s msgs infinite alternate;
+          animation: 2s msgs infinite alternate;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #000;
+}
+
+.display .msg p {
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 }
 
 .display .display--main {
@@ -67,7 +110,6 @@ html {
 }
 
 .display .display--main .display--main_left {
-  display: none;
   -webkit-box-flex: 90%;
       -ms-flex: 90%;
           flex: 90%;
@@ -138,7 +180,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
   -webkit-box-flex: 25%;
       -ms-flex: 25%;
           flex: 25%;
@@ -294,15 +335,15 @@ html {
 
 .keyboard .keyboard--actions .keyboard--actions_confirm {
   width: 35%;
-  height: 6rem;
+  height: 7rem;
   background-color: #48c079;
 }
 
-.bazil-flag {
-  width: 4rem;
-  height: 4rem;
+.brazil-flag {
+  width: 2.5rem;
+  height: 2.5rem;
   position: absolute;
-  right: .1rem;
-  top: .1rem;
+  right: .5rem;
+  top: .5rem;
 }
 /*# sourceMappingURL=style.css.map */
