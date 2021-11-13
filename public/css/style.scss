@@ -12,7 +12,8 @@ $keyboard-btn-number-border-cor: #555;
 $keyboard-btn-white-cor: #fff;
 $keyboard-btn-reset-cor: #fa7510;
 $keyboard-btn-confirm-cor: #48c079;
-$urna-height: 40rem;
+$urna-height: 50rem;
+
 
 // MIXIN
 
@@ -56,11 +57,12 @@ html {
 // AREA TELA
 
 .display {
+    
     margin: 3rem 1rem 3rem 3rem;
     padding: 2rem;
     flex: 65%;
     background: $display-cor;
-    min-height: $urna-height;
+    height: $urna-height;
     font-size: 1.6rem;
     border: .6rem solid #000;
 
@@ -68,6 +70,7 @@ html {
         @include flex($direction: row, $wrap: nowrap, $just: flex-start, $align: flex-start);
 
         .display--main_left {
+            display: none;
             flex: 90%;
 
             h1 {
@@ -112,8 +115,9 @@ html {
         }
 
         .display--main_right {
-            flex: 25%;
             @include flex($direction: column, $wrap: nowrap, $just: center, $align: center);
+            display: none;
+            flex: 25%;
 
             .img1 {
                 width: 100%;
@@ -150,6 +154,7 @@ html {
     }
 
     .display--footer {
+        display: none;
         margin-top: .5rem;
         border-top: .1rem solid #000;
         text-transform: uppercase;
@@ -226,13 +231,13 @@ html {
     }
 }
 
-// ÁREA BANDEIRA DO BRAZIL
+// ÁREA BANDEIRA DO BRASIL
 
 .bazil-flag {
     width: 4rem;
     height: 4rem;
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    right: .1rem;
+    top: .1rem;
 }
 
