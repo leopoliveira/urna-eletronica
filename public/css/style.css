@@ -35,6 +35,10 @@ html {
   }
 }
 
+.models {
+  display: none;
+}
+
 .container {
   width: 50%;
   margin: 2rem auto;
@@ -121,7 +125,7 @@ html {
 
 .display .display--main .display--main_left h2 {
   margin-top: 2rem;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -145,7 +149,7 @@ html {
 }
 
 .display .display--main .display--main_left .vote-numbers .vote-numbers--spaces {
-  width: 4rem;
+  width: 6rem;
   height: 7rem;
   background-color: #fff;
   border: .2rem solid #000;
@@ -216,7 +220,7 @@ html {
 
 .display .display--footer {
   display: none;
-  margin-top: .5rem;
+  margin-top: 3rem;
   border-top: .1rem solid #000;
   text-transform: uppercase;
 }
