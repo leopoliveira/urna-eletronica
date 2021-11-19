@@ -98,15 +98,14 @@ html {
 
         p {
             text-transform: uppercase;
-            
             position: absolute;
             top: 50%;
             left: 50%;
-            -webkit-translate: (-50% -50%);
-            -moz-translate: (-50% -50%);
-            -ms-translate: (-50% -50%);
-            -o-translate: (-50% -50%);
-            translate: (-50% -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz--transform: translate(-50% -50%);
+            -ms--transform: translate(-50%, -50%);
+            -o--transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
         }
     }
 
