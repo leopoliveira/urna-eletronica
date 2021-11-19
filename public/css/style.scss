@@ -298,3 +298,38 @@ html {
         font-weight: bold;
     }
 }
+
+
+// MEDIA QUERY
+
+@media all and (max-width: 1700px) {
+    .container, .candidatos {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    html {
+        font-size: 40%;
+    }
+
+    .keyboard {
+        font-size: 1.4rem;
+    }
+}
+
+@media all and (max-width: 520px) {
+    html {
+        font-size: 30%;
+    }
+
+    .keyboard {
+        font-size: 1.2rem;
+    }
+}
